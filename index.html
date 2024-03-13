@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TO BE LATEX AVAILABLE FOR OLD BROWSERS-->
+    <script type="text/javascript" async src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+    </script>
+    <!-- MATHJAX ENVIRONMENT-->
+    <script>
+        MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+    <!-- CHARGIN MATHJAX 3-->
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 style="color:white">Simple-Calculator</h1>
+            <p style="text-align: center;color: white;"><b>Operations between two numbers</b></p>
+
+            <!-- <fieldset class="input-group">
+                <label>Numero 1</label>
+                <input id="Input-1" class="custom-input" type="number" placeholder="Number 1">
+            </fieldset> -->
+
+            <div class="input-group">
+                <!-- <label><b>Number 1 :</b></label> -->
+                <!-- <input id="input1" class="input-custom" type="text" > -->
+                <div id="computations" class="result">
+                </div>
+                <div id="result" class="result" style="text-align: left">
+                </div>
+            </div>
+
+            <div class="divBtn">
+                <button id="btnMem" class="btnRows" onclick="memBtn()">M</button>
+                <button id="percBtn" class="btnRows" onclick="percBtn('%')">%</button>
+                <button id="delBtn" class="btnRows" onclick="delBtn()">&#x2190</button>
+                <button id="reloadBtn" class="btnRows" onclick="acBtn()">AC</button>
+            </div>
+
+            <div class="divBtn mathfunct">
+                <button id="sqrRootBtn" class="btnRows" onclick="squareBtn()">$x^2$</button>
+                <button id="sqrBtn" class="btnRows" onclick="sqrtRootBtn()">$\small\sqrt{x}$</button>
+                <button id="expBtn" class="btnRows" onclick="exponentialBtn()">$\small e^x$</button>
+                <button id="lnBtn" class="btnRows" onclick="lnBtn()">$\small\ln x$</button>
+            </div>
+
+            <div class="divBtn">
+                <button id="btn7" class="btnRows" onclick="identifyBtn(7)">7</button>
+                <button id="btn8" class="btnRows" onclick="identifyBtn(8)">8</button>
+                <button id="btn9" class="btnRows" onclick="identifyBtn(9)">9</button>
+                <button id="divBtn" class="btnRows" onclick="identifyBtn('/')">/</button>
+            </div>
+
+            <div class="divBtn">
+                <button id="btn4" class="btnRows" onclick="identifyBtn(4)">4</button>
+                <button id="btn5" class="btnRows" onclick="identifyBtn(5)">5</button>
+                <button id="btn6" class="btnRows" onclick="identifyBtn(6)">6</button>
+                <button id="btnMul" class="btnRows" onclick="identifyBtn('*')">x</button>
+            </div>
+
+            <div class="divBtn">
+                <button id="btn1" class="btnRows" onclick="identifyBtn(1)">1</button>
+                <button id="btn2" class="btnRows" onclick="identifyBtn(2)">2</button>
+                <button id="btn3" class="btnRows" onclick="identifyBtn(3)">3</button>
+                <button id="btnSub" class="btnRows" onclick="identifyBtn('-')">-</button>
+            </div>
+
+            <div class="divBtn">
+                <button id="btn0" class="btnRows" onclick="identifyBtn(0)">0</button>
+                <button id="btnDot" class="btnRows" onclick="identifyBtn('.')">.</button>
+                <button id="btnEqual" class="btnRows" onclick="identifyBtn('=')">=</button>
+                <button id="btnSum" class="btnRows" onclick="identifyBtn('+')">+</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- cargar de ultimo y no dar error si hay elementos que vamos a utilizar en el script -->
+    <script src="script.js"></script>
+</body>
+
+
+</html>

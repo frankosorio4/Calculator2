@@ -1,0 +1,90 @@
+/* Reseting CSS */
+/* https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(244, 162, 97);
+}
+
+.main{
+    display: flex;
+    align-items: center;/* vertical*/
+    justify-content: center; /*horizontal*/
+    height: 100vh;
+}
+
+h1{
+    margin: 15px auto 10px auto;
+}
+
+.container{
+    /* display: block; */
+    background-color: rgb(42, 157, 143);
+    border: 2px solid rgb(88, 79, 79);
+    display: flex;
+    flex-direction: column;
+    align-items: center;/* vertical*/
+    text-align: center;
+    margin: 30px auto;
+    width: 300px;
+    height: auto;
+    padding: 5px 5px 15px 5px;
+    border-radius: 15px;
+}
+
+.result{
+    background-color: white;
+    /* width: fit-content; */
+    text-align: left;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px auto;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.input-group{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: fit-content;
+    margin: 15px auto;
+}
+
+.input-custom{
+    height: 25px;
+    width: 80px;
+}
+
+.divBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* text-align: center; */
+    font-size: 25px;
+    margin: 5px auto;
+}
+
+.btnRows{
+    /* background-color: lightgray; */
+    border: none;
+    width: 40px;
+    height: fit-content;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+    margin: 5px 5px;
+    /* padding: 5px; */
+    background-color: rgb(233, 196, 106);
+}
+
+.mathfunct{
+    font-size: 12px;
+}
